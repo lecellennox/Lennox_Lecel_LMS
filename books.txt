@@ -1,0 +1,8 @@
+001, Atomic Habits, James Clear
+002, The Silent Patient, Alex Michaelides
+003, To Kill A Mocking Bird, Harper Lee
+004, Lord of the Flies, William Golding
+005, 1984, George Orwell
+006, Dune, Frank Herbert
+007, The Shining, Stephen King
+008, Happy Place, Emily Henry
