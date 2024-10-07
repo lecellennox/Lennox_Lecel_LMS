@@ -1,4 +1,7 @@
-/*
+/* Lecel Lennox
+Software Development - CEN 3024C
+10/06/2024
+
 Library Service Class serves to provide methods to manage the library's collection.
 Methods includes adding, removing, finding, and displaying books are used.
 HashMap was incorporated to manage library data.

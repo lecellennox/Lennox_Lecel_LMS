@@ -1,3 +1,7 @@
+/* Lecel Lennox
+Software Development - CEN 3024C
+10/06/2024
+ */
 import java.time.LocalDate;
 
 //Book Service Class serves to provide check in and check out method

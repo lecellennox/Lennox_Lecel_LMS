@@ -1,3 +1,7 @@
+/* Lecel Lennox
+Software Development - CEN 3024C
+10/06/2024
+ */
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
