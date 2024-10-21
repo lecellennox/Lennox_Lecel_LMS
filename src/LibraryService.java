@@ -10,7 +10,7 @@ import java.util.HashMap;
 
 public class LibraryService {
     // HashMap to store books, key = barcode
-    private HashMap<String, Book> books;
+    private final HashMap<String, Book> books;
 
 
     public LibraryService() {
@@ -28,17 +28,18 @@ public class LibraryService {
     }
 
     // Remove book by barcode method
-    public void removeByBarcode(String barcode) {
+    public boolean removeByBarcode(String barcode) {
         if (books.containsKey(barcode)) {
             books.remove(barcode);
             System.out.println("Book with barcode " + barcode + " was removed.");
         } else {
             System.out.println("Book with barcode " + barcode + " not found.");
         }
+        return false;
     }
 
     // Remove book by title method
-    public void removeByTitle(String title) {
+    public boolean removeByTitle(String title) {
         Book bookToRemove = null;
         String trimmedTitle = title.trim();  // trim user's input to eliminate spaces
 
@@ -56,6 +57,7 @@ public class LibraryService {
         } else {
             System.out.println("Book titled '" + title + "' not found.");
         }
+        return false;
     }
 
     // Method to find a book by title (helpful for checking out and checking in books)
