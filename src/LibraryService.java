@@ -7,6 +7,7 @@ Methods includes adding, removing, finding, and displaying books are used.
 HashMap was incorporated to manage library data.
 */
 import java.util.HashMap;
+import java.util.Collection;
 
 public class LibraryService {
     // HashMap to store books, key = barcode
@@ -15,6 +16,9 @@ public class LibraryService {
 
     public LibraryService() {
         books = new HashMap<>();
+    }
+    public Collection<Book> getBooks() {
+        return books.values();  // Returns all the Book objects in the library
     }
 
     // Add book method
@@ -71,7 +75,7 @@ public class LibraryService {
         return null; // if book not found, return null
     }
 
-    // Display all books method
+    //Display all books method
     public void displayBooks() {
         System.out.println("\n Library contains the following books:");
         for (Book book : books.values()) {
